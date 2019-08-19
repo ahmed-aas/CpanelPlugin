@@ -4,13 +4,14 @@
 # AUTHOR: Ahmed Abdel Fattah <ahmedaas@gmail.com>
 #
 clear
-echo "Installing IS_SiteLock"
+echo "Installing IS_SiteLock..."
 
 # Create the directory for the plugin
 mkdir -p /usr/local/cpanel/base/frontend/paper_lantern/IS_SiteLock
 
 # Get the plugin files from Github
-curl -s https://raw.githubusercontent.com/cPanelPeter/IS_SiteLock/master/is_files.tar.gz > /root/is_files.tar.gz
+
+curl -s https://github.com/ahmed-aas/CpanelPlugin/raw/master/is_files.tar.gz > /root/is_files.tar.gz
 
 # Uncompress the archive
 tar xzf is_files.tar.gz
